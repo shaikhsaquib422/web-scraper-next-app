@@ -21,7 +21,7 @@ const ProductCard = ({ product }: Props) => {
       </div>
 
       <div className="flex flex-col gap-3">
-        <h3>{product.title}</h3>
+        <h3>{product.title.substring(0, 100) + "..."}</h3>
 
         <div className="flex justify-between">
           <p className="text-black opacity-50 text-lg capitalize">
